@@ -1,78 +1,96 @@
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; /* 1REM = 10px */
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 body {
-    font-family: "Raleway", sans-serif;
-    font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 /** Globales **/
-h1, h2, h3 {
-    font-family: "Playfair Display", serif;
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  matgin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
 }
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 .contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 /** Header y Navegacion **/
 .nombre-sitio {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
 }
 .nombre-sitio span {
-    color: #037bc0;
+  color: #037bc0;
 }
 .contenedor-navegacion {
-    border-top: .1rem solid #e1e1e1;
+  border-top: 0.1rem solid #e1e1e1;
 }
 .nav-principal {
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-between;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero {
-    background-image: url(../img/principal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 55rem;
+  background-image: url(../img/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 55rem;
 }
 
 /** Categorias **/
+.categorias {
+    padding-top: 5rem;
+}
 .categorias h2 {
-    text-align: center;
+  text-align: center;
 }
 .categoria a {
-    text-align: center;
-    display: block;
-    padding: 2rem;
-    font-size: 2rem;
-
+  text-align: center;
+  display: block;
+  padding: 2rem;
+  font-size: 2rem;
 }
 .categoria a:hover {
-    background-color: #037bc0;
-    color: #ffffff;
-    border-bottom-right-radius: 1rem;
-    
+  background-color: #037bc0;
+  color: #ffffff;
+  border-bottom-right-radius: 1rem;
 }
 .listado-categorias {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
